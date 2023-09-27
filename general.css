@@ -1,0 +1,198 @@
+/* font-size:16px,32px,42px,48px,52px,62px,96px */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+:root{
+    --orange-color:#e67e22;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+body{
+    font-family: "Rubik", sans-serif;  
+    line-height: 1.6;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+}
+
+
+/* custom grid & container */
+
+.grid{
+    display: grid;
+    /* gap: 9.6rem; */
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    /* align-items: center; */
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid--3-cols{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid--5-cols{
+    grid-template-columns: repeat(5,1fr);
+}
+
+.grid-footer{
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+
+
+
+
+
+
+.hero-section{
+    background-color: #fae5d3;
+    padding: 9.6rem 0;
+}
+
+.hero{
+    max-width: 120rem ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 9.6rem;
+    /* padding: 0 3.2rem; */
+}
+
+.hero-img{
+    width: 100%;
+}
+
+/* headings */
+
+.heading-teritiary{
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    font-size: 3rem;
+    /* margin-bottom: 3.2rem; */
+    color: #474747;
+}
+
+.heading-secondary{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    font-size: 4.2rem;
+    margin-bottom: 9.6rem;
+}
+
+.heading-primary{
+    font-size: 5.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #733f11;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
+.subheading{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #733f11;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* ========================================== */
+
+
+.hero-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+/* BUTTON_________________________________________________ */
+
+.btn:link,.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    background-color:#4E2909;
+    outline: 2px solid #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    /* text-transform: capitalize; */
+}
+
+.btn-hero-secondary:link,.btn-hero-secondary:visited{
+    background-color: #fff;
+    color: #333;
+    outline: 2px solid #333;
+    transition: backround-color .3s !important;
+}
+
+.btn-cta:link,.btn-cta:visited{
+    color: #fff;
+    background-color: #4E2909;
+    transition: backround-color .3s !important;
+}
+
+
+.btn-hero-secondary:hover,.btn-hero-secondary:active{
+    background-color: #fdf2e9 !important;
+}
+
+
+.btn-cta:hover,.btn-cta:active{
+    background-color: #361e08;
+}
+
+/* helper classes */
+
+.center-text{
+    text-align: center;
+}
+
+.margin-right-sm{
+    margin-right: 1rem;
+}
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+
+.less-size-secondary{
+    font-size: 3.8rem !important;
+}
+
+.margin-top-large{
+    margin-top: 4rem;
+}
+
+.grid--4-cols{
+    grid-template-columns: repeat(4,1fr);
+}
